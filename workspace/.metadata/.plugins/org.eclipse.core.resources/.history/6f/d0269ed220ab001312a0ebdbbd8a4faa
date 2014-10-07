@@ -1,0 +1,12 @@
+package chapter1;
+class Stack<StackType>{
+	private StackType[] stack = (StackType[]) new Object[100];
+	private int sp = -1;
+	public void push(StackType element){
+		stak[++sp]
+	}
+}
+
+public class GenericClassExample {
+	
+}

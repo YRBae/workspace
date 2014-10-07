@@ -1,0 +1,17 @@
+package chapter1;
+
+public class StringExample {
+	public static void main(String[] args){
+		String hello = "Hello";
+		String world = new String("World");
+		
+		System.out.println(hello + world + "!");
+
+		String hello1 = "¾È³ç";
+		String world1 = "¼¼»ó";
+		String ah = new String("¾Æ");
+		
+		System.out.println(hello1 + world1 + ah + "!");
+		
+	}
+}

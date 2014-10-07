@@ -1,0 +1,13 @@
+package chapter1;
+
+
+public class GenericClassExample {
+	public static void main(String[] args){
+		Stack<Integer> stk1 = new Stack<Integer>();
+		Stack<Double> stk2 = new Stack<Double>();
+		stk1.push(1); stk1.push(2); stk1.push(3);
+		System.out.println("integer stack : "+stk1.pop()+" "+stk1.pop()+" "+stk1.pop());
+		stk2.push(1.5); stk2.push(2.5); stk2.push(3.5);
+		System.out.println("double stack : "+stk2.pop()+" "+stk2.pop()+" "+stk2.pop());
+	}
+}

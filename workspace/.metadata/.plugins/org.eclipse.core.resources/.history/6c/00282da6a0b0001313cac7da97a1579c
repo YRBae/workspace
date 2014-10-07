@@ -1,0 +1,15 @@
+package chapter1;
+
+public class ShiftExample {
+	public static void main(String[] args){
+		int i = -1;
+		
+		int x = i >>> 1;
+		int y = i >> 1;
+		int z = ~y+1;
+		
+		System.out.println("-1 >>> 1 = "+x);
+		System.out.println("-1 >> 1 = "+y);
+		System.out.println(""+z);
+	}
+}

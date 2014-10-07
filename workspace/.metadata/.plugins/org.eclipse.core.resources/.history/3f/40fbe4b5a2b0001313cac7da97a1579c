@@ -1,0 +1,19 @@
+package chapter1;
+
+public class StringExample {
+	public static void main(String[] args){
+		String hello = "Hello";
+		String world = new String("World");
+		
+		System.out.println(hello + world + "!");
+
+		String a = "¾È";
+		String b = "³ç";
+		String c = "ÇÏ";
+		String d = "¼¼";
+		String e = new String("¿ä");
+		
+		System.out.println(a+b+c+d+e);
+		
+	}
+}

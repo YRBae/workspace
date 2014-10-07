@@ -1,0 +1,12 @@
+package chapter2;
+
+public class Identifier {
+	public static void main(String[] args){
+		
+		int MyVar=1, myvar=2;
+		int $sum=10, package=20;
+		
+		System.out.println("MyVar = "+MyVar+", myvar = "+myvar);
+		System.out.println("$sum = "+$sum+", Package = "+package);
+	}
+}

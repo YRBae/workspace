@@ -1,0 +1,118 @@
+package Test;
+
+
+class Calculator{
+	int i;
+	float f;
+	double d;
+	void resultPrint(int a, char c, int b){
+		switch (c) {
+		case '+':
+			i = a+b;
+			System.out.println(a+"+"+b+"의 결과는 "+i+"입니다");
+			break;
+		case '-':
+			i = a-b;
+			System.out.println(a+"-"+b+"의 결과는 "+i+"입니다");
+			break;
+		case '/':
+			i = a/b;
+			System.out.println(a+"/"+b+"의 결과는 "+i+"입니다");
+			break;
+		case '*':
+			i = a*b;
+			System.out.println(a+"*"+b+"의 결과는 "+i+"입니다");
+			break;
+		default:
+			System.out.println("연산자 값이 잘못되었습니다.");
+			break;
+		}
+	}
+	void resultPrint(char a, char c, char b){
+		switch (c) {
+		case '+':
+			i = a+b;
+			System.out.println(a+"+"+b+"의 결과는 "+(char)i+"입니다");
+			break;
+		case '-':
+			i = a-b;
+			System.out.println(a+"-"+b+"의 결과는 "+(char)i+"입니다");
+			break;
+		case '/':
+			i = a/b;
+			System.out.println(a+"/"+b+"의 결과는 "+(char)i+"입니다");
+			break;
+		case '*':
+			i = a*b;
+			System.out.println(a+"*"+b+"의 결과는 "+(char)i+"입니다");
+			break;
+		default:
+			System.out.println("연산자 값이 잘못되었습니다.");
+			break;
+		}
+	}
+	void resultPrint(float a, char c, float b){
+		switch (c) {
+		case '+':
+			f = a+b;
+			System.out.println(a+"+"+b+"의 결과는 "+f+"입니다.");
+			break;
+		case '-':
+			f = a-b;
+			System.out.println(a+"-"+b+"의 결과는 "+f+"입니다.");
+		case '/':
+			f = a/b;
+			System.out.println(a+"/"+b+"의 결과는 "+f+"입니다.");
+		case '*':
+			f = a*b;
+			System.out.println(a+"*"+b+"의 결과는 "+f+"입니다.");
+		default:
+			System.out.println("연산자 값이 잘못되었습니다.");
+			System.out.println("다시 입력하십시오.");
+		break;
+		}
+	}
+	void resultPrint(double a, char c, double b){
+		switch (c) {
+		case '+':
+			d = a+b;
+			System.out.println(a+"+"+b+"의 결과는 "+d+"입니다.");
+			break;
+		case '-':
+			d = a-b;
+			System.out.println(a+"-"+b+"의 결과는 "+d+"입니다.");
+		case '/':
+			d = a/b;
+			System.out.println(a+"/"+b+"의 결과는 "+d+"입니다.");
+		case '*':
+			d = a*b;
+			System.out.println(a+"*"+b+"의 결과는 "+d+"입니다.");
+		default:
+			System.out.println("연산자 값이 잘못되었습니다.");
+			System.out.println("다시 입력하십시오.");
+			break;
+		}
+	}
+}
+
+class Select{
+	char c;
+	void inPut() throws java.io.IOException {
+		System.out.print("수행할 계산의 연산자를 입력하심시오 : ");
+		c = (char)System.in.read();
+		System.in.skip(2);
+	}
+	
+	
+}
+
+public class Test_2 {
+	public static void main(String[] args){
+		int i, ii;
+		char c, cc;
+		float f, ff;
+		double d, dd;
+
+	
+	}
+}

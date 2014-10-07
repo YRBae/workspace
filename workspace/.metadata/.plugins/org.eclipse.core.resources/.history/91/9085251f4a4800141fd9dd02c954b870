@@ -1,0 +1,71 @@
+package Test;
+class Adder{
+	int i;
+	float f;
+	double d;
+	void Adder(int a, char c, int b){
+		switch (c) {
+		case '+':
+			i = a+b;
+			System.out.println(a+"+"+b+"의 결과는 "+i+"입니다");
+			break;
+		case '-':
+			i = a-b;
+			System.out.println(a+"-"+b+"의 결과는 "+i+"입니다");
+			break;
+		case '/':
+			i = a/b;
+			System.out.println(a+"/"+b+"의 결과는 "+i+"입니다");
+			break;
+		case '*':
+			i = a*b;
+			System.out.println(a+"*"+b+"의 결과는 "+i+"입니다");
+			break;
+		default:
+			System.out.println("연산자 값이 잘못되었습니다.");
+			break;
+		}
+	}
+	void Adder(char a, char c, char b){
+		switch (c) {
+		case '+':
+			i = a+b;
+			System.out.println(a+"+"+b+"의 결과는 "+i+"입니다");
+			break;
+		case '-':
+			i = a-b;
+			System.out.println(a+"-"+b+"의 결과는 "+i+"입니다");
+			break;
+		case '/':
+			i = a/b;
+			System.out.println(a+"/"+b+"의 결과는 "+i+"입니다");
+			break;
+		case '*':
+			i = a*b;
+			System.out.println(a+"*"+b+"의 결과는 "+i+"입니다");
+			break;
+		default:
+			System.out.println("연산자 값이 잘못되었습니다.");
+			break;
+		}
+	}
+	void Adder(float a, char c, float b){
+		switch (c) {
+		case '+':
+			f = a+b;
+			System.out.println(a+"+"+b+"의 결과는 "+i+"입니다.");
+			break;
+
+		default:
+			break;
+		}
+	}
+}
+
+public class Test_2 {
+	public static 
+	public static void main(String[] args) throws java.io.IOException{
+		Adder result = new Adder();
+		result.Adder(a, c, b)
+	}
+}

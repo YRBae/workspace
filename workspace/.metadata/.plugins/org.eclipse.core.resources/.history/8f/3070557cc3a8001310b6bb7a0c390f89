@@ -1,0 +1,13 @@
+package chapter1;
+import javax.microedition.lcdui.*;
+import javax.imcroedition.midlet.*;
+
+public class HelloMIDIet {
+	public class HelloMIDlet extends MIdlet implements CommandListener{
+		private Form mMainForm;
+		public HelloMIDlet(){
+			mMainForm = new Form("HelloMIDlet");
+			mMainForm.append(new)
+		}
+	}
+}

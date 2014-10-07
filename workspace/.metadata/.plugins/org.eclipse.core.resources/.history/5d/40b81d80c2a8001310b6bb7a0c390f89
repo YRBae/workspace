@@ -1,0 +1,12 @@
+package chapter1;
+
+public class HelloWorldSwing {
+	public static void main(String[] args){
+		javax.swing.JFrame frame = new JFrame("HelloWorldSwing");
+		JLabel label = new JLabel("Hello World");
+		
+		frame.getContentPane().add(label);
+		frame.pack();
+		frame.setVisible(true);
+	}
+}

@@ -1,0 +1,12 @@
+package chapter2;
+
+public class IntergerConstant {
+	public static void main(String[] args){
+		
+		int i = 255, o = 0377, h = 0Xff;
+		long ; = 0XffL;
+		System.out.println("i = "+i", 0 = "+0", h = "+h);
+		if (h==1) System.out.println("Yes");
+		else System.out.println("No");
+	}
+}

@@ -1,0 +1,17 @@
+package chapter1;
+
+public class HelloWorld {
+	int a, b, c;
+	
+	public static void main(String[] args){
+			System.out.println("Hello World!");
+			System.out.println("JAVA Study!\n자바 공부!");
+	}
+	public static void XX(){
+	}
+	public void YY(){
+		int k, y;
+		k = 1;
+		y = 1;
+	}
+}

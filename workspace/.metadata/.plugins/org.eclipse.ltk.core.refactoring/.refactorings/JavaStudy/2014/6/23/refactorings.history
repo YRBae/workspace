@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 1 elements(s) to &apos;JavaStudy/src/chapter5_2&apos;&#x0D;&#x0A;- Original project: &apos;JavaStudy&apos;&#x0D;&#x0A;- Destination element: &apos;JavaStudy/src/chapter5_2&apos;&#x0D;&#x0A;- Original element: &apos;chapter5.StaticInnerClass.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;chapter5_2" element1="/src&lt;chapter5{StaticInnerClass.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1401763843207" units="1" version="1.0"/>
+</session>
