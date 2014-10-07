@@ -18,10 +18,12 @@
 <fullyQualifiedTypeName name="chapter5.z12_ThisConstructor"/>
 <fullyQualifiedTypeName name="chapter5.z13_StaticInitializer"/>
 <fullyQualifiedTypeName name="chapter5.Fraction19"/>
-<fullyQualifiedTypeName name="sun.applet.Main"/>
 <fullyQualifiedTypeName name="chapter6.SubClass"/>
 <fullyQualifiedTypeName name="chapter6.SuperClass"/>
 <fullyQualifiedTypeName name="chapter6.SuperClass6"/>
 <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.SIPUSH"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="sun.applet.Main"/>
+<fullyQualifiedTypeName name="chapter6.SuperClass13"/>
+<fullyQualifiedTypeName name="chapter6.SubClass13"/>
 </qualifiedTypeNameHistroy>
