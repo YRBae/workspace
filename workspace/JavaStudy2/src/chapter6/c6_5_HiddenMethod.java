@@ -1,5 +1,5 @@
 package chapter6;
-class SuperClass6 {
+class SuperClass5 {
 	static String greeting(){
 		return "Good Bye";
 		}
@@ -7,7 +7,7 @@ class SuperClass6 {
 		return "Oak";
 	}
 }
-class SubClass6 extends SuperClass6 {
+class SubClass5 extends SuperClass5 {
 	static String greeting(){
 		return "Hello";
 	}
@@ -17,7 +17,7 @@ class SubClass6 extends SuperClass6 {
 }
 public class c6_5_HiddenMethod {
 	public static void main(String[] args){
-		SuperClass6 s = new SubClass6();
+		SuperClass5 s = new SubClass5();
 		System.out.println(s.greeting() +", "+s.name());
 	}
 }
