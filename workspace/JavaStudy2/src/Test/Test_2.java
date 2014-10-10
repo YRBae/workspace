@@ -10,6 +10,7 @@ class Calculator{
 	int i;
 	float f;
 	double d;
+	String c;
 	void resultPrint(int a, char c, int b){
 		switch (c) {
 		case '+':
@@ -121,7 +122,7 @@ class Calculator{
 		}
 	}
 	void resultPrint(String a, String b){
-		String c = a+b;
+		c = a+b;
 		System.out.println("a+b의 결과는 "+c+"입니다.");
 	}
 }
@@ -197,32 +198,126 @@ class Select{
 		}
 	}
 }
+class AddSelect extends Select{
+	void addInput(int i, float f, double d, String s, int iii) throws java.io.IOException {
+		Scanner scan = new Scanner(System.in);
+		switch (iii) {
+		case 1:
+			this.i = i;
+			System.out.print("연산자 or 종료(n|N) : ");
+			ccc = (char)System.in.read();
+			if (ccc == 'n' || ccc =='N')
+				break;
+			System.out.print("두 번째 값 : ");
+			ii = scan.nextInt();
+			break;
+		case 2:
+			this.c = (char)i;
+			System.out.print("연산자 or 종료(n|N) : ");
+			ccc = (char)System.in.read();
+			System.in.skip(2);
+			if (ccc == 'n' || ccc =='N')
+				break;
+			System.out.print("두 번째 값 : ");
+			cc = (char)System.in.read();
+			System.in.skip(2);
+			break;
+		case 3:
+			this.f = f;
+			System.out.print("연산자 or 종료(n|N) : ");
+			ccc = (char)System.in.read();
+			if (ccc == 'n' || ccc =='N')
+				break;
+			System.out.print("두 번재 값 : ");
+			ff = scan.nextFloat();
+			break;
+		case 4:
+			this.d = d;
+			System.out.print("연산자 or 종료(n|N) : ");
+			ccc = (char)System.in.read();
+			if (ccc == 'n' || ccc =='N')
+				break;
+			System.out.print("두 번재 값 : ");
+			dd = scan.nextDouble();
+			break;
+		case 5:
+			this.s = s;
+			System.out.print("계속(아무키나 입력) or 종료(n|N : ");
+			ccc = (char)System.in.read();
+			System.in.skip(2);
+			if (ccc == 'n' || ccc =='N')
+				break;
+			System.out.print("두 번째 값 : ");
+			ss = scan.nextLine();
+			break;
+		case 6:
+			System.out.println("계산 완료!");
+			break;
+		default:
+			System.out.println("잘못된 선택입니다.");
+			System.out.println("다시 입력하십시오.");
+			System.out.println("");
+			break;
+		}
+	}
+}
 
 public class Test_2 {
 	public static void main(String[] args) throws java.io.IOException{
 		Select sel = new Select();
+		AddSelect addsel = new AddSelect();
 		Calculator cal = new Calculator();
 
 		for(;;){
 			sel.inPut();
 			if(sel.iii == 1){
 				cal.resultPrint(sel.i, sel.ccc, sel.ii);
+				for(;;){
+					addsel.addInput(cal.i, cal.f, cal.d, cal.c, sel.iii);
+					if (addsel.ccc == 'n' || addsel.ccc =='N')
+						break;
+					cal.resultPrint(addsel.i, addsel.ccc, addsel.ii);
+				}
 				System.out.println();
 			}
 			else if(sel.iii == 2){
 				cal.resultPrint(sel.c, sel.ccc, sel.cc);
+				for(;;){
+					addsel.addInput(cal.i, cal.f, cal.d, cal.c, sel.iii);
+					if (addsel.ccc == 'n' || addsel.ccc =='N')
+						break;
+					cal.resultPrint(addsel.c, addsel.ccc, addsel.cc);
+				}
 				System.out.println();
 			}
 			else if(sel.iii == 3){
 				cal.resultPrint(sel.f, sel.ccc, sel.ff);
+				for(;;){
+					addsel.addInput(cal.i, cal.f, cal.d, cal.c, sel.iii);
+					if (addsel.ccc == 'n' || addsel.ccc =='N')
+						break;
+					cal.resultPrint(addsel.f, addsel.ccc, addsel.ff);
+				}
 				System.out.println();
 			}
 			else if(sel.iii == 4){
 				cal.resultPrint(sel.d, sel.ccc, sel.dd);
+				for(;;){
+					addsel.addInput(cal.i, cal.f, cal.d, cal.c, sel.iii);
+					if (addsel.ccc == 'n' || addsel.ccc =='N')
+						break;
+					cal.resultPrint(addsel.d, addsel.ccc, addsel.dd);
+				}
 				System.out.println();
 			}
 			else if(sel.iii == 5){
 				cal.resultPrint(sel.s,  sel.ss);
+				for(;;){
+					addsel.addInput(cal.i, cal.f, cal.d, cal.c, sel.iii);
+					if (addsel.ccc == 'n' || addsel.ccc =='N')
+						break;
+					cal.resultPrint(addsel.s, addsel.ss);
+				}
 				System.out.println();
 			}
 		}
